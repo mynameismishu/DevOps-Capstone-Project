@@ -3,6 +3,8 @@ on:
   push:
 jobs:
   endproject:
+    env:
+     appName: "docker-image"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
